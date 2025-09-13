@@ -1,6 +1,7 @@
 package defaultt;
 import java.util.Scanner;
 
+
 public class multiplyTheDigits {
 
 	public static void main(String[] args) {
