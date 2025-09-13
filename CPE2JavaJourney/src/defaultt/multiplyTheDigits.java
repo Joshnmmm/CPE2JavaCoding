@@ -1,18 +1,6 @@
 package defaultt;
 import java.util.Scanner;
 
-/*Multiply the Digits. Reads an integer
-between 0 and 1000. Display and multiplies
-all the digits in the integer. Assume that the
-user follows directions. (Hint: Use the                 <--- nice no error handling :))
-division and remainder operators).
-
-number structure => 564
-5 = first num 
-6 = mid num
-4 = last num
-*/
-
 public class multiplyTheDigits {
 
 	public static void main(String[] args) {
