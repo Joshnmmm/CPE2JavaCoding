@@ -8,7 +8,7 @@ public class chocolateBars {
 		Scanner s = new Scanner(System.in); 
 		double bmrMale, bmrFemale; 
 		double weight, height, age; 
-		final double CHOCOLATE_BAR = 230; 
+		final double CHOCOLATE_BAR = 230; // To be asked if this is a CONST 
 		
 		double numOfChocBarsMale;
 		double numOfChocBarsFemale;
@@ -23,8 +23,8 @@ public class chocolateBars {
 		
 		bmrMale = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
 		bmrFemale = 655 + (4.3 * weight) + (4.7 * height) - (4.7 * age);
-		numOfChocBarsMale = bmrMale / CHOCOLATE_BAR;
-		numOfChocBarsFemale = bmrFemale / CHOCOLATE_BAR;
+		numOfChocBarsMale = bmrMale / CHOCOLATE_BAR;	 // ---|
+		numOfChocBarsFemale = bmrFemale / CHOCOLATE_BAR; // ---| both to be asked if the final output of num of chocolate is a whole number rounded or a float
 		
 		System.out.println("\nMale Calculated BMR: " + bmrMale);
 		System.out.printf("No. of chocolate male: %.2f\n", numOfChocBarsMale);
