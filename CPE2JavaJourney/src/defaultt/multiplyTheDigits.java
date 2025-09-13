@@ -27,7 +27,7 @@ public class multiplyTheDigits {
 		}
 		System.out.printf("%d\n%d\n%d\n", firstNum, midNum, lastNum);
 		System.out.println("The product of all digits in " + number + " is " + product);
-
+		//comments
 	}
 
 }
