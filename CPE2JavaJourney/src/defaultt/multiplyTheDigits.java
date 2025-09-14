@@ -6,9 +6,6 @@ public class multiplyTheDigits {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in); 
-		
-		
-		
 		System.out.printf("Enter a number between 0 and 1000:");
 		int number = s.nextInt(); 
 		s.close();
@@ -27,7 +24,6 @@ public class multiplyTheDigits {
 		}
 		System.out.printf("%d\n%d\n%d\n", firstNum, midNum, lastNum);
 		System.out.println("The product of all digits in " + number + " is " + product);
-		//comments
 	}
 
 }
