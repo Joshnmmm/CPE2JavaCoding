@@ -1,26 +1,37 @@
 package defaultt;
-
+import java.util.Scanner; 
 public class dayOfTheWeek {
 
 	public static void main(String[] args) {
-		int h, q, m, j, k;
-		int year = 2016;
-		m = 1; 
-		q = 20;
-		if(m == 1) {
-			m = 13; 
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter year: ");
+		int year = s.nextInt();
+
+		System.out.print("Enter month (1-12): ");
+		int month = s.nextInt();
+
+        System.out.print("Enter the day of the month (1-31): ");
+        int day = s.nextInt();
+        
+        
+        int adjustedMonth = month;
+		if(adjustedMonth == 1) {
+			adjustedMonth = 13; 
 			year-=1; 
 		}
-		else if(m == 2) {
-			m = 14; 
+		else if(adjustedMonth == 2) {
+			adjustedMonth = 14; 
 			year-=1; 
 		}
-		j = year/100; 
-		k = year%100; 
+		
+		int century = year/100; 
+		int yearOfCentury = year%100; 
 		
 		
-		h = (q + 26*(m+1)/10 + k +k/4 + j/4 +5*j)%7; 
-		switch (h) {
+		int dayIndex = (day+ (26 * (adjustedMonth + 1)) / 10 + yearOfCentury + (yearOfCentury / 4) + (century / 4) + (5 * century)) % 7; 
+		
+		switch (dayIndex) {
 			case (0):
 				System.out.println("Saturday"); 
 				break; 
