@@ -54,6 +54,7 @@ public class dayOfTheWeek {
 				System.out.println("Friday"); 
 				break; 
 		}
+		s.close(); 
 	}
 
 }
