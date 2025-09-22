@@ -14,9 +14,7 @@ public class decToHex {
 	            System.out.println("Hexadecimal number: 0");
 	            return;
 	        }
-
 	        String hex = "";
-
 	        int number = decimal;
 	        while (number > 0) {
 	            int remainder = number % 16;
