@@ -22,15 +22,14 @@ public class chocolateBars {
 		
 		
 		bmrMale = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
-		bmrFemale = 655 + (4.3 * weight) + (4.7 * height) - (4.7 * age);
 		numOfChocBarsMale = bmrMale / CHOCOLATE_BAR;
+		bmrFemale = 655 + (4.3 * weight) + (4.7 * height) - (4.7 * age);
 		numOfChocBarsFemale = bmrFemale / CHOCOLATE_BAR; 
 		
-		System.out.println("\nMale Calculated BMR: " + bmrMale);
+		System.out.printf("\nMale Calculated BMR: %.2f\n",bmrMale);
 		System.out.printf("No. of chocolate male: %.2f\n", numOfChocBarsMale);
-		System.out.println("\nFemale Calculated BMR: " + bmrFemale);
+		System.out.printf("\nFemale Calculated BMR: %.2f\n", bmrFemale);
 		System.out.printf("No. of chocolate female: %.2f\n ", numOfChocBarsFemale);
-		
 		s.close();
 	}
 
