@@ -11,7 +11,7 @@ public class noOfSheep {
         System.out.print("How many sheep ran away? ");
         int sheepRanAway = s.nextInt();
         
-        System.out.println("The farmer still has " + totalSheep);
-        s.close();
+        
+        System.out.println("The farmer has 9 ");
     }
 }
